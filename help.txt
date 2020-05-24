@@ -1,0 +1,104 @@
+        #region 'hyina'
+        /*   private void pictureBox2_MouseDown(object sender, MouseEventArgs e) {
+                isDownlink = true;
+                pictureBox2.Parent = this;
+                pictureBox2.BringToFront();
+            }
+
+
+            private void pictureBox2_MouseMove(object sender, MouseEventArgs e) {
+                if (isDownlink) pictureBox2.Location = this.PointToClient(Control.MousePosition);
+            }
+
+            Graphics gr;
+
+            private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
+            {
+
+                Array.Resize(ref linkbtn, linkbtn.Length + 1);
+                linkbtn[linkbtn.Length - 1] = new Button();
+                linkbtn[linkbtn.Length - 1].Height = 10;
+                linkbtn[linkbtn.Length - 1].Width = 10;
+                linkbtn[linkbtn.Length - 1].Left = pictureBox2.Left - 1;
+                linkbtn[linkbtn.Length - 1].Top = pictureBox2.Top - pictureBox2.Height;
+                linkbtn[linkbtn.Length - 1].Name = "b" + Convert.ToString(linkbtn.Length - 1);
+                tabControl1.SelectedTab.Controls.Add(linkbtn[linkbtn.Length - 1]);
+
+                Array.Resize(ref linkbtn, linkbtn.Length + 1);
+                linkbtn[linkbtn.Length - 1] = new Button();
+                linkbtn[linkbtn.Length - 1].Height = 10;
+                linkbtn[linkbtn.Length - 1].Width = 10;
+                linkbtn[linkbtn.Length - 1].Left = pictureBox2.Left + pictureBox2.Width;
+                linkbtn[linkbtn.Length - 1].Top = pictureBox2.Top - pictureBox2.Height;
+                linkbtn[linkbtn.Length - 1].Name = "b" + Convert.ToString(linkbtn.Length - 1);
+                tabControl1.SelectedTab.Controls.Add(linkbtn[linkbtn.Length - 1]);
+
+                gr = tabControl1.SelectedTab.CreateGraphics();
+                Pen pen = new Pen(Color.Black, 2);
+                Point p1 = new Point(linkbtn[linkbtn.Length - 2].Left + linkbtn[linkbtn.Length - 2].Width-50, linkbtn[linkbtn.Length - 2].Top-10);
+                Point p2 = new Point(linkbtn[linkbtn.Length - 1].Left + linkbtn[linkbtn.Length - 1].Width+50, linkbtn[linkbtn.Length - 1].Top-10);
+                gr.DrawLine(pen, p1, p2);
+                gr.Dispose();
+
+                isDownlink = false;
+                panel1.Controls.Add(pictureBox2);
+                pictureBox2.BringToFront();
+                pictureBox2.Top = pictureBox4.Top;
+                pictureBox2.Left = pictureBox4.Left;
+            }
+
+            System.Drawing.Point first;
+            System.Drawing.Point second;
+            bool flagDown = false;
+            Graphics g;
+
+            private void link_MouseDown(object sender, MouseEventArgs e)
+            {
+                if (!flagDown)
+                {
+                    first.X = e.X;
+                    first.Y = e.Y;
+                    flagDown = true;
+                }
+            }
+
+            private void link_MouseUp(object sender, MouseEventArgs e)
+            {
+                if (flagDown)
+                {
+                    second.X = e.X;
+                    second.Y = e.Y;
+                    flagDown = false;
+
+                    Graphics g = pictureBox1.CreateGraphics();
+                    g.DrawLine(new Pen(Color.Red, 2), first, second);
+                }
+            }
+
+            private void link_MouseMove(object sender, MouseEventArgs e)
+            {
+                if (flagDown)
+                {
+                    g.Clear(Color.Black);
+                    second.X = e.X;
+                    second.Y = e.Y;
+
+                    g.DrawLine(new Pen(Color.Gray, 2), first, second);
+                }
+            }
+
+                  private void drawMyLink(MouseEventArgs e, Pen myPen)
+            {
+                if (rightNowBuildLink)
+                {
+                    System.Drawing.Point point = new Point(e.X, e.Y);
+                    System.Drawing.Point pointS = curLink.GetStartPoint(point);
+                    eraseTemplategraphics();
+                    g = Graphics.FromImage(pictureBox1.Image);
+                    g.DrawLine(myPen, pointS, point);
+                    g.Dispose();
+                }
+            }
+        
+        */
+#endregion
